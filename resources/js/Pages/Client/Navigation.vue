@@ -66,8 +66,9 @@ onMounted(() => {
 
 <template>
     <div class="md:space-y-6 sm:space-y-3 space-y-2 w-full">
-        <h4 class="text-sm text-gray-300 md:text-xs sm:text-xs font-semibold">
-            {{ client.name }}
+        <h4 class="text-sm text-gray-300 md:text-xs sm:text-xs font-semibold flex items-center gap-1">
+           <UserCircleIcon class="h-6 w-6" /> 
+           {{ client.name }}
         </h4>
 
         <!-- Scrollable area with arrows -->
