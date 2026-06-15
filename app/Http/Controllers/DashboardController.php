@@ -16,8 +16,8 @@ class DashboardController extends Controller
     public function __invoke(Request $request)
     {
         return inertia()->render('Dashboard', [
-            'clients' => Client::all()->count(),
-            'latest_client' => Client::latest()->first(),
+            'clients' => Client::count(),
+            'latest_client' => Client::latest()->select('id', 'name', 'nin')->first(),
         ]);
     }
 }

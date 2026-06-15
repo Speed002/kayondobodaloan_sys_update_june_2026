@@ -280,7 +280,7 @@
                                 1.1.2. Ekika ky’ekiduka e kitundibwa: <strong class="blue-color">{{$motor->type}}</strong>
                             </li>
                             <li>
-                                1.1.3. Embeera y’ekiduka: <strong class="blue-color">{{$motor->condition}}</strong>
+                                1.1.3. Embeera y’ekiduka: <strong class="blue-color">{{$motor->condition == 'Old' ? 'Ekozeko' : 'Empya'}}</strong>
                             </li>
                             <li>
                                 1.1.4. Enkola: <strong class="blue-color">{{$motor->make}}</strong>

@@ -69,8 +69,8 @@ defineProps({
             <label for="condition">Condition</label>
             <select v-model="form.condition" class="w-full bg-transparent-dark text-gray-300 text-sm rounded-md p-2">
                 <option value="" class="bg-transparent-dark">Select Condition</option>
-                <option value="New" class="bg-transparent-dark">New</option>
-                <option value="Old" class="bg-transparent-dark">Old</option>
+                <option value="New" class="bg-transparent-dark">New (Empya)</option>
+                <option value="Old" class="bg-transparent-dark">Old (Ekozeko)</option>
             </select>
             <div v-if="form.errors.condition" class="text-xs text-rose-600 mt-1">
                 {{ form.errors.condition }}

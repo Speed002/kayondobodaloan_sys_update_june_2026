@@ -151,7 +151,7 @@
                   </tr>
                   <tr>
                     <td>Vehicle Condition</td>
-                    <td>{{$motor->condition}}</td>
+                    <td>{{$motor->condition}} ({{$motor->condition == 'Old' ? 'Ekozeko' : 'Empya'}})</td>
                   </tr>
                   <tr>
                     <td>Vehicle Registered Names</td>
